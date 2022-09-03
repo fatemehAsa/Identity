@@ -1,0 +1,29 @@
+﻿@model IEnumerable<string>
+@{
+    ViewData["Title"] = "Home Page";
+    int row = 1;
+}
+<style>
+    dt{
+        padding:15px;
+    }
+    dd{
+        background:#eee;
+    }
+</style>
+@*<a href="/Account/SignOut">
+        <img src="~/images/signout.png" />
+    </a>*@
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome WebClient</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+@foreach (var item in Model)
+{
+    <dt>Email :</dt>
+    <dd>@item</dd>
+}
+
+

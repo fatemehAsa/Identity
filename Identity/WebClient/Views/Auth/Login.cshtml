@@ -1,0 +1,179 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    body {
+        background: #dce9ee;
+    }
+
+    .header-text {
+        text-align: center;
+        position: relative;
+        right: 37px;
+        top: 20px;
+    }
+
+    .form-check {
+        direction: rtl;
+        left: 50px;
+    }
+
+    .form-check-label {
+        position: relative;
+    }
+
+    .form-check-input {
+        position: absolute;
+        right: -60%;
+        top: 30%;
+    }
+
+    span.text-danger {
+        position: relative;
+        bottom: 16px;
+        left: 20px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .loginPage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        width: 285px;
+        margin: -140px 0 0 -182px;
+        padding: 40px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        padding-bottom: 3px;
+    }
+
+    .register-ref {
+        text-align: right;
+        display: block;
+        font-weight: bold;
+        padding-right: 20px;
+        margin-bottom: 30px;
+        direction: rtl;
+    }
+
+    .loginPage h2 {
+        margin: 0 0 20px;
+        line-height: 1;
+        color: $AlexsBlue;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .loginPage input {
+        outline: none;
+        display: block;
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        color: #ccc;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition: 0.2s linear;
+        -moz-transition: 0.2s linear;
+        -ms-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+    }
+
+    .loginPage input {
+        color: #333;
+    }
+
+        .loginPage input:focus {
+            color: #333;
+            border: 1px solid $AlexsBlue;
+        }
+
+    .loginPage button {
+        cursor: pointer;
+        background: $AlexsBlue;
+        width: 100%;
+        padding: 10px 15px;
+        border: 0;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+        .loginPage button:hover {
+            background: #369cb8;
+        }
+
+    .button {
+        border-radius: 4px;
+        background-color: $AlexsBlue;
+        border: none;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+            .button span:after {
+                content: '»';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+</style>
+<h1 class="header-text">Login Client</h1>
+
+<div class="loginPage">
+
+    <form asp-action="Login" asp-route-returnUrl="@ViewData["ReturnUrl"]">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input placeholder="Email" type="text" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <input placeholder="Password" type="password" asp-for="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+        
+        <div class="form-group">
+            <input type="submit" value="ورود" class="btn btn-info" />
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

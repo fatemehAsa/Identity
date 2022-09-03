@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\Identity.Data.deps.json
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\Identity.Data.runtimeconfig.json
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\Identity.Data.runtimeconfig.dev.json
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\Identity.Data.dll
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\ref\Identity.Data.dll
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\bin\Debug\net5.0\Identity.Data.pdb
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.dll
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\ref\Identity.Data.dll
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.pdb
+C:\Users\User\Desktop\Identity\Identity\Identity.Data\obj\Debug\net5.0\Identity.Data.genruntimeconfig.cache
